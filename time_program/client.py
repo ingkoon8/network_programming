@@ -1,5 +1,5 @@
 import socket
-n=1
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(('localhost', 8030))
 string = '서버 접속'
