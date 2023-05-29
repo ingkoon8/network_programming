@@ -20,7 +20,8 @@ fn = filename.split('/')
 
 c_sock.sendall(fn[-1].encode()) # path를 제외하고 파일 이름만 전송
 
-with open(filename, 'rb') as f:
+# 파일 내용 전송
+with open(filename, 'rb') as f: 
     c_sock.sendfile(f,0)
 
 print('Sending complete')
