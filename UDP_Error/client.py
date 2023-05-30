@@ -5,7 +5,7 @@ c_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 c_sock.connect(('localhost', 2500))
 
 for i in range(10):
-    delay = 1.0 # 딜레이는 0.1초부터 시작
+    delay = 0.1 # 딜레이는 0.1초부터 시작
     data = input('Sending message : ')
 
     while 1:
